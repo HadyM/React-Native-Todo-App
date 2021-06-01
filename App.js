@@ -1,6 +1,6 @@
 import { StatusBar } from "expo-status-bar";
-import React, { useReducer } from "react";
-import { View } from "react-native";
+import React, { useReducer, useCallback, useEffect, useState } from "react";
+import { StyleSheet, Text, View } from "react-native";
 import Title from "./Components/Title";
 import Input from "./Components/Input";
 import List from "./Components/List";
