@@ -9,9 +9,11 @@ export default function Input({ placeholder, onSubmitEditing }) {
       style={styles.input}
       value={text}
       placeholder={placeholder}
+      placeholderTextColor="#F21616"
       onChangeText={(value) => setText(value)}
       onSubmitEditing={() => {
-        if (!text) return;
+        if (!text) return; // Don't submit if empty
+
         onSubmitEditing(text);
         setText("");
       }}
@@ -23,5 +25,8 @@ const styles = StyleSheet.create({
   input: {
     padding: 15,
     height: 50,
+    color: "red",
+    fontWeight: "bold",
+    fontStyle: "italic",
   },
 });

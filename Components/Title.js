@@ -8,3 +8,16 @@ export default function Title({ children }) {
     </View>
   );
 }
+
+const styles = StyleSheet.create({
+  header: {
+    backgroundColor: "rgb(242, 22, 22)",
+    padding: 15,
+  },
+  title: {
+    textAlign: "center",
+    color: "black",
+    fontWeight: "bold",
+    paddingTop: 25,
+  },
+});

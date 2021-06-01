@@ -7,7 +7,7 @@ import List from "./Components/List";
 import { actionCreators, reducer, initialState } from "./Components/todos";
 
 export default function App() {
-  const [state, dispatch] = useReducer(reducer, intialState);
+  const [state, dispatch] = useReducer(reducer, initialState);
 
   return (
     <View>
